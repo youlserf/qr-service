@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/qrdb
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  redis:
+    host: localhost
+    port: 6379
+
+  cache:
+    type: redis
+
+jwt:
+  secret: 5a71a1ec2c314f79f732a1d9bd51fb32
+  expiration: 3600000
+
+server:
+  port: 8081
